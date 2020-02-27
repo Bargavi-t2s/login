@@ -1,0 +1,76 @@
+
+<%- include ('partials/navbar') %>
+<% if (locals.errors) { %>
+  
+       <% Object.values(errors).forEach(function(error){ %>
+         <div class="alert alert-danger alert-dissmissable">
+            <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+           <strong><%= error.msg %></strong>
+         </div> 
+       <% }); %>
+   
+   <% } %>
+
+   <% if (locals.errors_msg) { %>
+      <div class="alert alert-danger alert-dissmissable">
+         <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+        <strong><%= errors_msg %></strong>
+      </div> 
+
+<% } %>
+<div class="formplacement">
+<div class="card form">
+   <div class="card-body">
+                   <form method="post" class="forms" action="" id="register_form" style="align-content: center;">
+                 
+                      <div class="form-group row">
+                         <div class="col-sm-1"></div>
+                         <label for="inputEmail3" class="col-sm-3 col-form-label">Email</label>
+                         <div class="col-sm-6">
+                            <input type="email" class="form-control"  placeholder="example@gmail.com" name="email" id="email">
+                            <div id="emailerr"></div>
+                         </div> <span class="red">*</span><div id="emailerr"></div>
+                         <div class="col-sm-1"></div>
+                      </div>
+                  
+                      <div class="form-group row">
+                        <div class="col-sm-1"></div>
+                        <label for="inputEmail3" class="col-sm-3 col-form-label">Password</label>
+                        <div class="col-sm-6">
+                           <input type="password" class="form-control"  placeholder="password" name="password" id="password">
+                           <div id="passerr"></div>
+                        </div> <span class="red">*</span><div id="passerr"></div>
+                        <div class="col-sm-1"></div>
+                     </div>
+                  
+                     <div class="form-group row">
+                        <div class="col-sm-1"></div>
+                        <label for="inputEmail3" class="col-sm-3 col-form-label">Confirm Password</label>
+                        <div class="col-sm-6">
+                           <input type="password" class="form-control"  placeholder="password" name="cpassword" id="cpassword">
+                           <div id="cpasserr"></div>
+                        </div> <span class="red">*</span><div id="cpasserr"></div>
+                        <div class="col-sm-1"></div>
+                     </div>
+
+
+
+                      <div class="form-group row">
+                         <div class="col-sm-4"></div>
+                         <div class="col-sm-3">
+                            <button type="submit" class="btn btn-primary" name="submit" id="submit">Register</button>
+                         </div>
+                         <!-- <div class="col-sm-1">
+                         </div> -->
+                         <div class="col-sm-2">
+                           <button type="reset" class="btn btn-primary " id ="reset" name="reset">Cancel</button>
+                         </div>
+                      </div>
+                   </form>
+                </div>
+</div>
+</div>
+
+
+
+<%- include ('partials/footer1') %>

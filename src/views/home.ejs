@@ -1,0 +1,15 @@
+<%- include ('partials/navbar') %>  
+
+<% if (locals.errors_msg) { %>
+    <div class="alert alert-success alert-dissmissable">
+       <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+      <strong><%= errors_msg %></strong>
+    </div> 
+<% } %>
+
+<div class="container">
+    <div class="jumbotron">
+        WELCOME TO THE APPLICATION
+    </div>
+</div>
+<%- include ('partials/footer1') %>
