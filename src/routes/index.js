@@ -54,7 +54,7 @@ router.get('/register',function(req,res)
 router.get('/logout',function(req,res)
 { 
     req.logout();
-    res.redirect('login');
+    res.redirect('index');
 });
 
 

@@ -10,8 +10,8 @@
         <a class="nav-item nav-link active" href="/home">Home <span class="sr-only">(current)</span></a>
       </div> -->
       <% if(!(locals.isAuthenticated)) { %>
-        <a class="nav-item nav-link" href="/login">Login</a>
-        <a class="nav-item nav-link" href="/register">Sign up</a>
+        <a class="nav-item nav-link" href="/google">Login</a>
+        <!-- <a class="nav-item nav-link" href="/register">Sign up</a> -->
         <% } %>
         <% if(locals.isAuthenticated) { %>
         <a class="nav-item nav-link" href="/logout">Log out</a>
