@@ -1,0 +1,47 @@
+
+.btn{
+    background-color:#00bc9c;
+    border-color:#00bc9c;
+    text-align: center;
+    font-weight: bolder;
+}
+.btn:hover {
+	background-color:#0ad48b;
+	border-color: #0ad48b;
+}
+.formplacement
+{
+    margin-top:100px;   
+}
+
+
+.form-control
+{
+    border-color:#00bc9c ;
+}
+
+.form
+{   align-content: center;
+    width: 500px;
+    border-color:#00bc9c;
+    margin: auto;
+    align-self: center;
+}
+.forms
+{
+    align-content: center;
+}
+nav
+{   margin-top: 20px;
+    border-radius: 25px;
+    background-color:#00bc9c;
+    border-color:#00bc9c;
+    text-align: center;
+    font-weight: bolder;
+}
+a{
+    color: white;
+}
+a:hover{
+    color: darkgreen;
+}
