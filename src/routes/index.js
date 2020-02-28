@@ -31,18 +31,18 @@ router.get('/login',function(req,res)
         isAuthenticated:false
     });
 });
-  router.get('/home',passport.authenticate('google',{
-      successRedirect:''
+   router.get('/google/redirect',passport.authenticate('google',{
+      successRedirect:'/home'
   }));
-// router.get('/home',function(req,res)
-// {  
-//     res.render('home',{
-//         errors:res.locals.errors,
-//         errors_msg:res.locals.errors_msg,
-//         isAuthenticated:true
-//     });
+router.get('/home',function(req,res)
+{  
+    res.render('home',{
+        errors:res.locals.errors,
+        errors_msg:res.locals.errors_msg,
+        isAuthenticated:true
+    });
     
-// });
+});
 router.get('/register',function(req,res)
 {  res.render('register',{
     errors:res.locals.errors,
