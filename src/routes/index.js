@@ -31,11 +31,7 @@ router.get('/login',function(req,res)
         isAuthenticated:false
     });
 });
-<<<<<<< HEAD
   router.get('/google/redirect',passport.authenticate('google',{
-=======
-   router.get('/google/redirect',passport.authenticate('google',{
->>>>>>> 90b2deff53439299c9542f31408e997f935e027f
       successRedirect:'/home'
   }));
 router.get('/home',function(req,res)
@@ -58,11 +54,7 @@ router.get('/register',function(req,res)
 router.get('/logout',function(req,res)
 { 
     req.logout();
-<<<<<<< HEAD
     res.redirect('index');
-=======
-    res.redirect('login');
->>>>>>> 90b2deff53439299c9542f31408e997f935e027f
 });
 
 
@@ -73,8 +65,4 @@ router.post('/login',control.postlogin);
 
 
 
-<<<<<<< HEAD
 module.exports = router;
-=======
-module.exports = router;
->>>>>>> 90b2deff53439299c9542f31408e997f935e027f

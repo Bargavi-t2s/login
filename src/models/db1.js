@@ -8,11 +8,7 @@ const MongoClient = require('mongodb').MongoClient;
 const assert = require('assert');
 
 // Connection URL
-<<<<<<< HEAD
-const url = 'mongodb://127.0.0.1:27017';
-=======
 const url = 'mongodb://localhost:27017';
->>>>>>> 90b2deff53439299c9542f31408e997f935e027f
 
 // Database Name
 const dbName = 'loginapp';
@@ -20,16 +16,12 @@ const dbName = 'loginapp';
 // Use connect method to connect to the server
 MongoClient.connect(url,{ useUnifiedTopology: true }, function(err, client) {
   assert.equal(null, err);
-<<<<<<< HEAD
+
   console.log("Connected successfully to database via mongono");
 
   db = client.db(dbName);
   //console.log(db);
-=======
-  console.log("Connected successfully to database");
 
-  db = client.db(dbName);
->>>>>>> 90b2deff53439299c9542f31408e997f935e027f
 
 });
 

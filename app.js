@@ -71,10 +71,7 @@ app.use('/',routes);
 //app.use('/users',users);
 
 //initRoutes(app);
-<<<<<<< HEAD
 const port = 3002;
 app.listen(port, () => console.log(`Server listening on port ${port}`));
-=======
-const port = 8080;
-app.listen(port, () => console.log(`Server listening on port ${port}`));
->>>>>>> 90b2deff53439299c9542f31408e997f935e027f
+
+
