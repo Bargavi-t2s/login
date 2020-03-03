@@ -16,7 +16,7 @@ const dbName = 'loginapp';
 // Use connect method to connect to the server
 MongoClient.connect(url,{ useUnifiedTopology: true }, function(err, client) {
   assert.equal(null, err);
-  console.log("Connected successfully to database via mongodb");
+  console.log("Connected successfully to database via mongo");
 
   db = client.db(dbName);
   //console.log(db);
