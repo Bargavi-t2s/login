@@ -71,5 +71,5 @@ app.use('/',routes);
 //app.use('/users',users);
 
 //initRoutes(app);
-const port = 8080;
+const port = 3002;
 app.listen(port, () => console.log(`Server listening on port ${port}`));
