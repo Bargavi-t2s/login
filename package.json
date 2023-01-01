@@ -13,7 +13,7 @@
     "bcrypt": "^3.0.8",
     "connect-flash": "^0.1.1",
     "cookie-parser": "^1.4.4",
-    "css-loader": "^3.4.2",
+    "css-loader": "^6.7.3",
     "ejs-lint": "^1.0.1",
     "express-session": "^1.17.0",
     "express-validator": "^5.3.1",
